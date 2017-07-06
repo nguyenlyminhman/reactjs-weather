@@ -10,5 +10,6 @@ module.exports= {
                 exclude: /node_modules/
             }
         ]
-    }
+    },
+    devtool: 'cheap-eval-source-map'
 }

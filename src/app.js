@@ -6,3 +6,4 @@ ReactDOM.render(
     <Weather />,
     document.getElementById('root')
 );
+

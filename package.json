@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/nguyenlyminhman/reactjs-weather#readme",
   "devDependencies": {
+    "eslint-config-rallycoding": "^3.2.0",
     "react": "^15.6.1",
     "react-dom": "^15.6.1"
   },

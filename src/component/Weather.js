@@ -6,9 +6,8 @@ export default class Weather extends Component {
     render() {
         return (
             <div>
-                <h3>Weather Component</h3>
-                {/*<WeatherMessage />
-                <WeatherForm />*/}
+                <WeatherMessage />
+                <WeatherForm />
             </div>
         );
     }
