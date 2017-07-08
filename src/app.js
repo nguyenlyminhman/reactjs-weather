@@ -1,9 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Weather from './component/Weather';
+import { Provider } from 'react-redux';
+import store from './redux/store';
+import Weather from './redux_weather/Weather';
 
 ReactDOM.render(
-    <Weather />,
+    <Provider store={store}>
+        <Weather />
+    </Provider >,
     document.getElementById('root')
 );
-

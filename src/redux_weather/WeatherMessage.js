@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 
-export default class WeatherMessage extends Component {
+class WeatherMessage extends Component {
     getMessage() {
         const { isLoading, temp, cityName } = this.props;
         if (isLoading) return 'Loading...please wait !!!';
@@ -15,3 +16,11 @@ export default class WeatherMessage extends Component {
         );
     }
 }
+
+const mapStateToStore = (state) => ({
+    isLoading: state.isLoading,
+    cityName: state.cityName,
+    temp: state.temp
+});
+
+export default connect(mapStateToStore)(WeatherMessage);
